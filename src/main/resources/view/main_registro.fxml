@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.sysalmacenfx.control.RegistroController">
+    <children>
+        <Label layoutX="150.0" layoutY="20.0" text="Registro" textAlignment="CENTER" textFill="black">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+
+        <Label layoutX="50.0" layoutY="70.0" text="Nombre de Usuario:" />
+        <TextField fx:id="usuary" layoutX="200.0" layoutY="70.0" />
+
+        <Label layoutX="50.0" layoutY="110.0" text="Contraseña:" />
+        <PasswordField fx:id="contra" layoutX="200.0" layoutY="110.0" />
+
+        <Button layoutX="150.0" layoutY="160.0" onAction="#nuevoUser" text="Registrar" />
+
+
+        <Label fx:id="messageLabel" layoutX="50.0" layoutY="200.0" textFill="red" />
+        <Button layoutX="14.0" layoutY="14.0" onAction="#salirr" text="Salir" />
+    </children>
+</AnchorPane>
